@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+
+<html lang="es">
+<head> <title>Integrador JAVASCRIPT</title>
+        <meta charset="utf-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+        <meta name="vieport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" href="estilos.css">
+        <link rel="stylesheet" href="mediaqueries.css">
+        <link rel="stylesheet" href="animaciones.css">
+        <!-------agregamos cdn de font awesome para los iconos: link de cdn: https://cdnjs.com/libraries-------->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />">
+</head>
+
+<body>
+
+    <header>
+        <!--<img src="./assets/pastor.jpg" alt="poner descripcion de la página, ayuda al SEO y por ende, al posicionamiento de la página" class="logo">-->
+        <i class="fa-solid fa-droplet"></i>
+        <nav class="navbar">
+<!--  clase 1.11: mediaqueries --> 
+            <label for="menu-toggle" class="menu-label">
+               <!--menu-hamburguesa-->
+               <i class="fa-solid fa-water"></i>
+            </label>
+            <input type="checkbox" name="" id="menu-toggle">
+            <ul class="navbar-list">
+                <li><a href="#hero"> Inicio</a></li>
+                <li><a href="#info">Quiénes somos</a></li>
+                <li><a href="#discover">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+              
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+
+
+
+
+        <!-- SECCION INICIO  -->
+        <section id="hero">
+            <div class="hero-info">
+                <h1>OyG piscinas </h1>
+                <p> <strong> OyG Piscinas</strong>, fue creada en el año 2019. Nació como un proyecto familiar, luego de pasar pormuchas crisis económicas en la familia, nació como un proyecto con mucho entusiasmo y amor por el trabajo y ánimos de crecimiento tanto personal, como profesional y laboral. Sobre todo, con las ganas de seguir adelante siempre 💪 </p>
+                
+
+                <button href="#" onclick="document.getElementById('comentarios').innerHTML = 'Gracias por dejarnos tus comentarios!'" >Dejá tus comentarios!</button>
+
+                <p id="comentarios"  ></p>
+
+            </div>
+            <div>
+            <img src="./assets/familia.jpeg" alt="">
+            </div>
+        </section>
+
+
+
+
+
+<!--SECCION QUIENES SOMOS-->
+
+        <section id="info">
+            <h1>Quiénes somos</h1>
+            <div class="info-card-container" >
+                <div class="info-card" >
+                    <img src="./assets/papa.jpeg" alt="">
+                    <h3>Luis</h3>
+                    <p>Luis, nació en 1963, en 1994 formó matrimonio con Kuky, con quien tuvo tres hijos. Es un emprendedor nato, y hoy con 60 años de edad recién cumplidos sigue adelande de su empresa.</p>
+                </div>
+                <div class="info-card">
+                    <img src="./assets/mama.jpeg" alt="">
+                    <h3>Kuky</h3>
+                    <p>Kuky, nacida en el año 1964,  es la compañera fiel de Luis, quien estuvo a su lado en cada momento de éxito y/o crisis, quien lo apoya y acompaña en todos sus proyectos, incondicionalmente.</p>
+                </div>
+                <div class="info-card">
+                    <img src="./assets/hijo.jpeg" alt="">
+                    <h3>Otta</h3>
+                    <p>Otta, nacido en 1987, es el hijo menor de la familia, quien se hizo cargo de los proyectos de su padre y continúa adelante en el camino de sus proyectos venideros.</p>
+                </div>
+            </div>
+        </section>
+
+        
+
+
+
+        <!-- SECCION PROYECTOS-->
+
+        <section id="discover" >
+            <div class="discover-info">
+                <h1>Proyectos</h1>
+                <div class="discover-text">
+                    <p> Desde sus inicios, en el año 2019, OyG Piscinas ha realizado una gran cantidad de trabajos y proyectos hogareños, algunos de los cuales mostramos a continuación
+                    </p>
+                </div>
+            </div>
+            <div class="discover-cards">
+                <img src="./assets/pile.jpg" alt="">
+                <img src="./assets/pile2.jpg" alt="">
+                <img src="./assets/pile3.jpg" alt="">
+            </div>
+
+
+
+
+                <h2>Distintos proyectos:</h2>
+                <div class="categories">
+                    <button class="category active" >Piscinas</button>
+                    <button class="category" >Solariums</button>
+                    <button class="category">Quinchos</button>
+                    <button class="category">Mantenimiento</button>
+                </div>
+
+
+                <div class="products-container">
+
+                    <div class="product">
+                        <img src="./assets/pile.jpg" alt="">
+                        <div>
+                            <div>
+                                <p>Piscina con solarium</p>
+                            </div>
+                            <div>
+                                <div>
+                                    <img src="./assets/pile2.jpg" alt="">
+                                    <p>Barandas</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <img src="./assets/pile3.jpg" alt="">
+                                    <p>Detalles</p>
+                                </div>
+                                <button class="btn-add" > Seguir viendo</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    
+    
+
+
+
+
+
+    <!-- SECCION CONTACTO-->
+        <section id="contact">
+            <div>
+                <h2> Contactanos:</h2>
+                <p> ✉ @oygpiscinas </p>
+                <p> <a href="https://www.google.com/maps?ll=-29.338705,-58.608865&z=13&t=m&hl=es-ES&gl=US&mapclient=embed&q=Perugorria+Corrientes" target="_blank" > 📍 Perugorria, Curuzú Cuatiá, Corrientes, Argentina.</a>  </p>
+                <div>
+
+                    <iframe src="https://maps.google.com/maps?q=perugorria+corrientes&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" class="mapa" ></iframe>
+                    <a href="https://online-timer.me/"></a>
+                </div>
+                <div>
+                    <a href="login.html" class="btn btn--login"> <span class="btn__span">Iniciar sesion</span> </a>
+                    <a href="register.html" class="btn btn-register">Registrarme</a>
+                </div>
+                
+            </div>
+        </section>
+
+
+    
+
+
+
+
+
+
+    </main>
+  
+    <footer  class="footer">
+        <p>
+            <span> <i> ♥  analialucreciaotaño  ♥ </i> </span>
+        </p>
+    </footer>
+<script src="javascript.js"></script>
+</body>
+</html>
